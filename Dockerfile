@@ -17,6 +17,7 @@ RUN apt update && apt install -y \
 # Install requirements for JupyterHub
 RUN pip install jupyterhub \
     jupyterlab \
-    notebook
+    notebook \
+    jupyterhub-ldapauthenticator
 
 RUN npm install -g configurable-http-proxy
