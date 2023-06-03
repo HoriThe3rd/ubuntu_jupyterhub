@@ -1,0 +1,11 @@
+version: '2'
+services:
+
+    jupyterhub:
+        image: jupyterhub_ubuntu:0.5
+        container_name: jupyterhub_ubuntu
+        ports:
+            - 8000:8000
+        volumes:
+            - /mnt/data/jupyter_home:/home
+        tty: true
